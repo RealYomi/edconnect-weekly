@@ -55,67 +55,47 @@
                     </div>
             </div>
             <div class="container">
-                <form class="form-group" name="editProject">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label class="form-label"><strong>Edit Project</strong></label> 
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label class="form-label"><strong>Manage Project Files</strong></label>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <form class="form-group">
-                <div class="form-row">
+                <div class="row">
                     <div class="col">
-                        <label class="form-label">Project Name:</label>
-                        <input class="form-control" type="text" name="name"  placeholder="Project 1"/>
+                        <h4 class="font-weight-strong" style="margin-top: 50px;">Edit Project</h4>
+                            <form class="form-group">
+                                <div class="form-group">
+                                    <label class="form-label">Project Name:</label>
+                                    <input class="form-control" type="text" name="name"  placeholder="Project 1"/>
+                                </div>
+                                <div class="form-group">
+                                    <form-label for="abstrct">Project Abstract:</form-label>
+                                    <textarea type="text" name="abstract" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <form-label for="authors">Authors:</form-label>
+                                    <input type="text" name="authors" class="form-control"/>
+                                </div>
+                                <div class="form-group">
+                                    <form-label for="tags">Tag(s):</form-label>
+                                    <input type="text" name="tags" class="form-control" placeholder="#web"/>
+                                </div>
+                                <botton type="button" class="btn btn-primary">Save</botton>
+                            </form>
                     </div>
                     <div class="col">
-                        <div class="form-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="custom-file">
-                                <label class="custom-file-label" for="customFile">click to open file browser</label>
-                            </div>
-                        </div>
+                        <h4 class="font-weight-strong" style="margin-top: 50px;">Manage Project Files</h4>
+                            <form class="form-group">
+                                <div class="form-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="custom-file">
+                                        <label class="custom-file-label" for="customFile">click to open file browser</label>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="card">
+                                        <div class="card-header">Project Files</div>
+                                        <div class="card-body text-center">No file uploaded yet</div>       
+                                    </div>
+                                </div>
+                            </form>
                     </div>
                 </div>
-                </form>
-                <form class="form-group">
-                <div class="form-row">
-                    <div class="col">
-                        <form-label for="abstrct">Project Abstract:</form-label>
-                        <textarea type="text" name="abstract" class="form-control"></textarea>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-header">Project Files</div>
-                            <div class="card-body text-center">No file uploaded yet</div>       
-                        </div>
-                    </div>
-                </div>
-                </form>
-                <form class="form-group">
-                <div class="form-row">
-                    <div class="col-6">
-                        <form-label for="authors">Authors:</form-label>
-                        <input type="text" name="authors" class="form-control"/>
-                    </div>
-                </div>
-                </form>
-                <form class="form-group">
-                <div class="form-row">
-                    <div class="col-6">
-                        <form-label for="tags">Tag(s):</form-label>
-                        <input type="text" name="tags" class="form-control" placeholder="#web"/>
-                    </div>
-                </div> </br>
-                <botton type="search" class="btn btn-primary">save</botton>
-                </form>
             </div>
             <div class= "card-footer text-right">Project Explorer &copy; 2020. <b>Edconnect</b></div>
         </main>
